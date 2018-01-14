@@ -1,0 +1,78 @@
+{
+    "items": [
+        {
+            "product": {
+                "id": 2321312,
+                "name": "Smartphone Apple iPhone 7 128GB",
+                "images": [
+                    "https://images0.kabum.com.br/produtos/fotos/91380/91380_index_gg.jpg",
+                    "https://images0.kabum.com.br/produtos/fotos/91380/91380_1501769652_gg.jpg",
+                    "https://images0.kabum.com.br/produtos/fotos/91380/91380_1501769693_gg.jpg",
+                    "https://images0.kabum.com.br/produtos/fotos/91380/91380_1501769677_gg.jpg"
+                ],
+                "price": {
+                    "value": 3509.10,
+                    "installments": 10,
+                    "installmentValue": 389.90
+                },
+                 "description": 
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget enim sed mauris dictum ultricies. Cras sagittis metus non viverra iaculis. Vestibulum diam ante, rutrum ac pellentesque a, volutpat malesuada nulla. Nullam pellentesque, odio ut venenatis dapibus, risus ligula varius erat, in volutpat ante odio quis purus. Sed commodo nulla id odio viverra feugiat. Nulla tincidunt risus a purus pulvinar, eget hendrerit quam pharetr"
+                
+            }
+        },
+        {
+            "product": {
+                "id": 9971,
+                "name": "Smart TV Samsung Série 4 UN32J4300AG 32 polegadas LED Plana",
+                "images": [
+                    "http://tv32polegadas.com/wp-content/uploads/2014/12/tv-samsung-32-polegadas-UN32H5550.jpg ",
+                    "https://mlb-s1-p.mlstatic.com/677751-MLB25664575996_062017-C.jpg",
+                    "https://www.casasbahia-imagens.com.br/html/conteudo-produto/1/4793652/tv-32j4300-samsung-design.-514x514--6x-6.jpg",
+                    "http://tv32polegadas.com/wp-content/uploads/2014/12/tv-samsung-32-polegadas-UN32H5550.jpg"
+                ],
+                "price": {
+                    "value": 1139.90,
+                    "installments": 10,
+                    "installmentValue": 134.11
+                },
+                "description": 
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget enim sed mauris dictum ultricies. Cras sagittis metus non viverra iaculis. Vestibulum diam ante, rutrum ac pellentesque a, volutpat malesuada nulla. Nullam pellentesque, odio ut venenatis dapibus, risus ligula varius erat, in volutpat ante odio quis purus. Sed commodo nulla id odio viverra feugiat. Nulla tincidunt risus a purus pulvinar, eget hendrerit quam pharetr"
+                
+            }
+        },
+        {
+            "product": {
+                "id": 6717131,
+                "name": "Câmera Digital Canon EOS Rebel T5i 18.0 Megapixels",
+                "images": [
+                    "http://mthumbs.buscape.com.br/camera-digital/canon-eos-rebel-t5i-18-0-megapixels_600x600-PU7bf7b_1.jpg"
+                ],
+                "price": {
+                    "value": 1999.20,
+                    "installments": 10,
+                    "installmentValue": 235.20
+                },
+                 "description": 
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget enim sed mauris dictum ultricies. Cras sagittis metus non viverra iaculis. Vestibulum diam ante, rutrum ac pellentesque a, volutpat malesuada nulla. Nullam pellentesque, odio ut venenatis dapibus, risus ligula varius erat, in volutpat ante odio quis purus. Sed commodo nulla id odio viverra feugiat. Nulla tincidunt risus a purus pulvinar, eget hendrerit quam pharetr"
+                
+            }
+        },
+        {
+            "product": {
+                "id": 6717131,
+                "name": "Lenovo IdeaPad 310 80UH0004BR Intel Core i7-6500U 2.5 GHz 8192 MB 1024 GB",
+                "images": [
+                    "http://mthumbs.buscape.com.br/notebook/lenovo-ideapad-310-80uh0004br-intel-core-i7-6500u-2-5-ghz-8192-mb-1024-gb_600x600-PU98e6e_1.jpg"
+                ],
+                "price": {
+                    "value": 2599.00,
+                    "installments": 10,
+                    "installmentValue": 259.90
+                },
+                 "description": 
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget enim sed mauris dictum ultricies. Cras sagittis metus non viverra iaculis. Vestibulum diam ante, rutrum ac pellentesque a, volutpat malesuada nulla. Nullam pellentesque, odio ut venenatis dapibus, risus ligula varius erat, in volutpat ante odio quis purus. Sed commodo nulla id odio viverra feugiat. Nulla tincidunt risus a purus pulvinar, eget hendrerit quam pharetr"
+                
+            }
+        }
+    ]
+}

@@ -97,21 +97,21 @@
 
                 $imgBox1.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $photoBigImg.src = data.items[i].product.images[0];
-                    },15000);
+                    }, 15000);
                 }, false);
                 $imgBox2.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $photoBigImg.src = data.items[i].product.images[0];
-                    },15000);
+                    }, 15000);
                 }, false);
                 $imgBox3.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $photoBigImg.src = data.items[i].product.images[0];
-                    },15000);
+                    }, 15000);
                 }, false);
 
 
@@ -167,13 +167,19 @@
                     $photoProducts.removeChild($flexColumn);
                     $photoBig.style = "width:100%; height:100%; margin-left:0; margin-bottom:0px;"
                 }
+                
 
                 function addToShop() {
                     setInterval(function () {
                         $pCounter.textContent = valueShop;
-                        $totalParcels.textContent = app().formatingGold(shopValueActualParcels);
-                        $totalValor.textContent = app().formatingGold(shopValueActualTotal);
+                        
+                        
+                        
+                        shopValueActualParcels <= 0 ? $totalParcels.textContent = "R$: 0,00" : $totalParcels.textContent = app().formatingGold(shopValueActualParcels);
+
+                        shopValueActualTotal <= 0 ? $totalValor.textContent = "R$: 0,00" : $totalValor.textContent = app().formatingGold(shopValueActualTotal);
                     }, 1000);
+                    
 
                     var $counterCar = doc.createElement("div");
                     $counterCar.classList = "counter-product";
@@ -200,7 +206,8 @@
                         shopValueActualTotal -= data.items[i].product.price.value;
                         shopValueActualParcels -= data.items[i].product.price.installmentValue;
                         
-                        
+
+
                     }, false);
 
                     var $boxCar = doc.createElement("div");
@@ -235,12 +242,11 @@
                     valueShop++;
                     shopValueActualTotal += data.items[i].product.price.value;
                     shopValueActualParcels += data.items[i].product.price.installmentValue
-                    console.log(shopValueActualTotal);
-                    
+
                     var $totalParcels = doc.querySelector("[data-js='totalParcels']");
                     var $totalValor = doc.querySelector("[data-js='totalVal']");
 
-                    
+
                 }
 
 

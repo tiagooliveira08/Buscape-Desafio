@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/07c7b5b0ea.js"></script>
     <title>Buscapé desafio</title>
 </head>
 
@@ -12,18 +13,31 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="img/logo-buscape.png" class="logo-responsive" />
+            <a href="#index"><img src="img/logo-buscape.png" class="logo-responsive"  /></a>
         </div>
-        <div class="menu">
-            <img src="img/menu.png" >
+        <div class="menu" data-js="menuDiv">
+            <i class="fa fa-bars fa-2x toggle" data-js="toggle" aria-hidden="true">
+            </i>
+            
+            
+        </div>
+        <div class="shop" data-js="shop">
+        </div>
+
+        <div class="bottom-detail-total" data-js="bottomMenu">
+            <p class="right-details-subtotal">Subtotal</p>
+            <hr class="separator">
+            <p class="right-details-parcelas">x</p>
+            <p class="right-details-total">x</p>
         </div>
 
 
     </nav>
     <div class="navbar-simulator">
     </div>
-    <div class="container">
-        
+
+    <div class="container" id="index">
+
     </div>
 
 
@@ -33,3 +47,4 @@
 
 </html>
 <script src="js/script.js"></script>
+<script src="js/events.js"></script>

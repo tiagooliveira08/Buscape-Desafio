@@ -6,11 +6,11 @@
         var $container = doc.querySelector(".container");
         var valueShop = 0;
         var elements;
+        var shopValueActualParcels = 0;
+        var shopValueActualTotal = 0;
 
         return {
             init: function init() {
-                console.log("Iniciou app");
-                console.log($container);
                 this.connect();
 
             },
@@ -93,16 +93,25 @@
                 var $photoBigImg = doc.createElement("img");
                 $photoBig.appendChild($photoBigImg);
                 $photoBigImg.src = data.items[i].product.images[0];
-                $photoBigImg.className = "img-responsive";
+                $photoBigImg.className = "img-responsive zoom";
 
                 $imgBox1.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
+                    setTimeout(function(){
+                        $photoBigImg.src = data.items[i].product.images[0];
+                    },15000);
                 }, false);
                 $imgBox2.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
+                    setTimeout(function(){
+                        $photoBigImg.src = data.items[i].product.images[0];
+                    },15000);
                 }, false);
                 $imgBox3.addEventListener("click", function () {
                     $photoBigImg.src = this.src;
+                    setTimeout(function(){
+                        $photoBigImg.src = data.items[i].product.images[0];
+                    },15000);
                 }, false);
 
 
@@ -160,25 +169,25 @@
                 }
 
                 function addToShop() {
-                    setInterval(function(){ 
+                    setInterval(function () {
                         $pCounter.textContent = valueShop;
+                        $totalParcels.textContent = app().formatingGold(shopValueActualParcels);
+                        $totalValor.textContent = app().formatingGold(shopValueActualTotal);
                     }, 1000);
-                    valueShop ++;
-                    
-                    
+
                     var $counterCar = doc.createElement("div");
                     $counterCar.classList = "counter-product";
                     doc.querySelector("[data-js='menuDiv']").appendChild($counterCar);
-                    
+
                     var $pCounter = doc.createElement("p");
                     $pCounter.classList = "text-center";
                     $counterCar.appendChild($pCounter);
-                    
+
                     var $shop = doc.querySelector("[data-js='shop']");
                     var $carProduct = doc.createElement("div");
                     $carProduct.classList = "car-product";
                     $shop.appendChild($carProduct);
-                    
+
 
                     var $close = doc.createElement("span");
                     $close.classList = "close";
@@ -188,6 +197,10 @@
                     $close.addEventListener("click", function () {
                         valueShop--;
                         $shop.removeChild($carProduct);
+                        shopValueActualTotal -= data.items[i].product.price.value;
+                        shopValueActualParcels -= data.items[i].product.price.installmentValue;
+                        
+                        
                     }, false);
 
                     var $boxCar = doc.createElement("div");
@@ -197,7 +210,6 @@
                     var $imgCar = doc.createElement("img");
                     $imgCar.classList = "img-responsive";
                     $imgCar.src = data.items[i].product.images[0];
-                    console.log(data.items[i].product.images[0]);
                     $boxCar.appendChild($imgCar);
 
                     var $carDetailsProduct = doc.createElement("div");
@@ -219,8 +231,16 @@
                     $productCarTotal.classList = "product-car-val-total";
                     $productCarTotal.textContent = `ou ${valorTotal} à vista`;
                     $carDetailsProduct.appendChild($productCarTotal);
-                    
 
+                    valueShop++;
+                    shopValueActualTotal += data.items[i].product.price.value;
+                    shopValueActualParcels += data.items[i].product.price.installmentValue
+                    console.log(shopValueActualTotal);
+                    
+                    var $totalParcels = doc.querySelector("[data-js='totalParcels']");
+                    var $totalValor = doc.querySelector("[data-js='totalVal']");
+
+                    
                 }
 
 

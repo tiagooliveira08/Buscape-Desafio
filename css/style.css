@@ -292,10 +292,19 @@ html,body{
 .photo-big{
     width: 60%;
     margin-left: 10%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+.zoom{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.4s ease;
+}
+.zoom:hover{
+    transform: scale(1.2)
 }
 .photo-big-no-images{
     width: 80%;

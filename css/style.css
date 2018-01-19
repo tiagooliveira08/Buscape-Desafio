@@ -228,6 +228,7 @@ html,body{
     padding: 10px 20px;
     cursor: pointer;
     
+    
 }
 .btn-green{
     background-color: #22b14c;
@@ -312,4 +313,34 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:900px){
+    .about-product{
+        display: none;
+    }
+    .photos-products{
+        width: 60%;
+    }
+    .product-name{
+        font-size: 14px;
+    }
+    .produt-val{
+        font-size: 14px;
+    }
+    .btn-green{
+        margin-left: 0;
+    }
+    .btn{
+        display: block;
+        width: 100px;
+        height: auto;
+        font-size: 10px;
+        padding: 1px;
+    }
+    .products-details{
+        width: 40%;
+        padding: 5px;
+    }
+    
 }
